@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+	
+	
+	<style>
+	/* body {
+	background-color: #efefef;
+	width: 90%;
+	height: 78vh;
+	background-image: linear-gradient(45deg, purple, #f06d06);
+		} */
+
+	html {
+	  width: 100%;
+	  height: 100vh;
+	  background-image: linear-gradient(45deg, #2e7063, #00e6b8);
+	}
+
+	#login-box {
+	  /* margin: 200px auto 0px auto; */
+	  margin-top: 200px;
+	  margin-right: auto;
+	  margin-bottom: 0px;
+	  margin-left: auto;
+	  width: 250px;
+	  /* zoom: 1.5; */
+	  /* padding: 10px 25px 60px 25px; */
+	  padding-top: 10px;
+	  padding-right: 25px;
+	  padding-bottom: 60px;
+	  padding-left: 25px;
+	  /* text-align: left; */
+	  /* position: relative; */
+	  background-color: #ffffff;
+	  border: 1px solid #999;
+	  border-radius: 5px;
+	  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	}
+
+	h2 {
+	  text-align: center;
+	  display: block;
+	}
+
+	.i {
+	  color: orange;
+	  font-weight: bold;
+	  position: relative;
+	}
+	.i::before {
+	  content: "i";
+	  color: black;
+	  position: absolute;
+	}
+
+	.text-input {
+	  display: block;
+	  width: 250px;
+	  height: 30px;
+	  margin: auto;
+	  margin-bottom: 5px;
+	  border: 1px solid #999;
+	  border-radius: 5px;
+	}
+
+	i {
+	  position: absolute;
+	  padding-top: 30px;
+	  margin-left: 150px;
+	}
+
+	#username {
+	  margin-bottom: 20px;
+	}
+
+	.required-label {
+	  font-weight: bold;
+	}
+
+	.required-label::after {
+	  content: "*";
+	  color: red;
+	}
+
+	#checkbox-rememberme {
+	  margin-left: 0px;
+	  margin-top: 7px;
+	  margin-right: 0px;
+	  /* border: 10px solid #999;
+	  border-radius: 5px; */
+	}
+
+	.label-rememberme {
+	  margin-top: -2px;
+	  text-decoration: underline;
+	  /* font-size: 14px; */
+	  color: gray;
+	}
+
+	button {
+	  width: 250px;
+	  height: 40px;
+	  margin-top: 15px;
+	  display: block;
+	  border: 1px solid #999;
+	  border-radius: 5px;
+	  background-color: #2e7063;
+	  font-weight: bold;
+	  color: white;
+	}
+	
+	</style>
+  </head>
+
+  <body>
+    <div id="login-box">
+      <form action="./floria.html" target="_blank">
+        <h2>Log<span class="i">i</span>n</h2>
+        <div>
+          <label for="username" class="required-label">Username</label>
+          <input
+            id="username"
+            class="text-input"
+            type="text"
+            name="nickname"
+            required
+          />
+        </div>
+        <div>
+          <label for="password" class="required-label">Password</label>
+          <i class="fa fa-lock"></i>
+          <input
+            id="password"
+            class="text-input"
+            type="password"
+            name="password"
+            required
+          />
+        </div>
+        <div>
+          <input
+            id="checkbox-rememberme"
+            type="checkbox"
+            name="remember"
+            value="yes"
+          />
+          <label class="label-rememberme" for="checkbox-rememberme"
+            >Remember Me</label
+          >
+          <button type="submit">LOG IN</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
