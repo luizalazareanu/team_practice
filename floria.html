@@ -6,61 +6,117 @@
 	<title>Team Effort</title>
 
 	<style>
-		body,
-		html {
-			height: 100vh;
-			margin: 0;
-		}
+		body {
+	background-image: url("https://floria.ro/views/floria/images/layout/logo.png?v=1591165513");
+}
+#container {
+	width: 70%;
+	border: 1px solid #006666;
+	background-color: white;
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	grid-template-rows: repeat(4, 420px);
+	position: relative;
+	left: 15%;
+	justify-content: center;
+	position: absolute;
+	top: 70px;
+	z-index: -1;
+}
+.cont {
+	border-top: 1px solid #99ffff;
+	margin: 5px;
+	display: flex;
+	flex-direction: column;
+}
+.contimg {
+	margin: 10px auto 0px auto;
+}
+h1 {
+	font-family: Arial;
+	font-size: 17px;
+	text-align: center;
+	color: #00e6e6;
+	height: 20px;
+}
+h2 {
+	font-family: Arial;
+	font-size: 15px;
+	text-align: left;
+	color: #ffb3e6;
+	font-weight: 500;
+}
+button {
+	width: 100px;
+	background-color: transparent;
+	border: 2px solid #006666;
+	margin: 0px auto 5px auto;
+	font-size: 15px;
+	cursor: pointer;
+	color: #006666;
+}
+ul {
+	list-style-type: none;
+	display: flex;
+	background-color: #00e6b8;
+	line-height: 50px;
+	width: 90%;
+	position: fixed;
+	top: 0px;
+	left: 5%;
+}
 
-		.footer {
-			background-color: #00e6b8;
-			height: 50px;
-			width: 100%;
-			position: fixed;
-			bottom: 0;
-		}
+ul li {
+	margin-left: 100px;
+	font-size: 20px;
+	font-family: Arial;
+	font-weight: 550;
+	border-right: 1px solid white;
+	text-align: center;
+	padding-right: 20px;
+}
 
-		.hero-image {
-			background-image: url("https://www.intheloop.io/blog/wp-content/uploads/2019/02/Effective_teamwork-1500x500.jpg");
-			height: 50%;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
+ul li:first-child {
+	margin-left: 0px;
+}
 
-		ul {
-			list-style-type: none;
-			display: flex;
-			background-color: #00e6b8;
-			line-height: 50px;
-			margin: 10px auto;
-			width: 90%;
-		}
-
-		ul li {
-			margin-left: 100px;
-			font-size: 20px;
-			font-family: Arial;
-			font-weight: 550;
-			border-right: 1px solid white;
-			text-align: center;
-			padding-right: 20px;
-		}
-
-		ul li:first-child {
-			margin-left: 0px;
-		}
-
-		ul li a {
-			text-decoration: none;
-			color: white;
-		}
+ul li a {
+	text-decoration: none;
+	color: white;
+}
+.footer {
+	display: grid;
+	grid-template-columns: 900px 1fr 250px;
+	background-color: #00e6b8;
+	width: 100%;
+	position: fixed;
+	bottom: 10px;
+}
+#mesage > p {
+	font-size: 20px;
+	margin-left: 20px;
+	border-right: 3px solid white;
+	color: white;
+	font-weight: 500;
+	padding-right: 20px;
+	transform: translate(50px, 0px);
+}
+#mesage {
+	display: flex;
+	align-items: flex-start;
+	/* line-height: 30px; */
+}
+#media {
+	display: flex;
+	align-items: center;
+}
+#media > img {
+	margin-left: 20px;
+}
 	</style>
 </head>
 
 <body>
-	<div class="hero-image">
-
 		<div id="nav">
 			<ul>
 				<li><a href="#">Buchete de flori</a></li>
@@ -70,9 +126,107 @@
 				<li><a href="#">Colectia de vara</a></li>
 			</ul>
 		</div>
-
-	</div>
-	<div class="footer"></div>
+		<div class="cont" id="container">
+			<div class="cont" id="rose">
+				<img
+					src="https://cdni.floria.ro/images/products/img1/3194/thumbnails/flori-esti-adorabila-32973.jpeg"
+				/>
+				<h1>Buchet trandafiri</h1>
+				<h2>Contine:5 Trandafiri, 2 Minirosa, 3 Alstroemeria, 3 Lisianthus</h2>
+				<button type="button">Vezi detalii</button>
+			</div>
+			<div class="cont" id="miracle">
+				<img
+					src="https://cdni.floria.ro/images/products/img1/2842/thumbnails/flori-pasiune-inocenta-33538.jpeg"
+				/>
+				<h1>Buchet de flori - Pasiune inocenta</h1>
+				<h2>Contine: 3 Gerbera, 2 Crizanteme, 3 Trandafiri, 3 Alstroemeria.</h2>
+				<button type="button">Vezi detalii</button>
+			</div>
+			<div class="cont" id="fantasy">
+				<img
+					src="https://cdni.floria.ro/images/products/img1/2300/thumbnails/flori-buchet-de-flori-vise-colorate-33813.jpeg"
+				/>
+				<h1>Buchet de flori - Vise colorate</h1>
+				<h2>Contine: 9 Minirosa, 5 Alstroemeria, 5 Lisianthus.</h2>
+				<button type="button">Vezi detalii</button>
+			</div>
+			<div class="cont" id="precious">
+				<img
+					src="https://cdni.floria.ro/images/products/img1/16835/thumbnails/flori-buchet-cu-hortensie-si-orhidee-35691.jpg"
+				/>
+				<h1>Buchet cu hortensie si orhidee</h1>
+				<h2>Contine: 5 Trandafiri, 2 Wax, 5 Alstroemeria, 1 Hortensia, 1</h2>
+				<button type="button">Vezi detalii</button>
+			</div>
+			<div class="cont" id="princess">
+				<img
+					src="https://cdni.floria.ro/images/products/img1/2195/thumbnails/flori-dragoste-in-culori-33260.jpeg"
+				/>
+				<h1>Buchet de flori - Dragoste in culori</h1>
+				<h2>Contine: 3 Gerbera, 6 Iris, 1 Santini, 3 Frezii, 3 Garoafe,</h2>
+				<button type="button">Vezi detalii</button>
+			</div>
+			<div class="cont" id="dame">
+				<img
+					src="https://cdni.floria.ro/images/products/img1/15723/thumbnails/flori-nuante-de-albastru-34031.jpeg"
+				/>
+				<h1>Buchet de flori - Nuante de albastru</h1>
+				<h2>Contine: 1 Hortensia, 1 Minirosa, 2 Alstroemeria, 2 Lisianthus</h2>
+				<button type="button">Vezi detalii</button>
+			</div>
+			<div class="cont" id="colorfully">
+				<img
+					src="https://cdni.floria.ro/images/products/img1/15371/thumbnails/flori-dragostea-regala-33775.jpeg"
+				/>
+				<h1>Buchet de flori - Dragostea Regala</h1>
+				<h2>
+					Contine: 2 Cala, 5 Trandafiri, 1 Lisianthus, 1 Trahelium, 2 Frezii
+				</h2>
+				<button type="button">Vezi detalii</button>
+			</div>
+			<div class="cont" id="perfume">
+				<img
+					src="https://cdni.floria.ro/images/products/img1/16429/thumbnails/flori-buchet-de-primavara-colorat-35079.png"
+				/>
+				<h1>Buchet de primavara colorat</h1>
+				<h2>Contine: 5 Trandafiri, 5 Ranunculus, 3 Lisianthus, 3 Lalele</h2>
+				<button type="button">Vezi detalii</button>
+			</div>
+			<div class="cont" id="adorable">
+				<img
+					src="https://cdni.floria.ro/images/products/img1/2749/thumbnails/flori-te-iubesc-34411.jpeg"
+				/>
+				<h1>Buchet de flori - Te iubesc</h1>
+				<h2>Contine: 25 Trandafiri, 12 Trandafiri.</h2>
+				<button type="button">Vezi detalii</button>
+			</div>
+		</div>
+		<div class="footer">
+			<div id="mesage">
+			<p>Flori.Cadouri.Experiente</p>
+			<p>Livrare in 2 ore</p>
+			<p>Felicitare cadou</p>
+			</div>
+			<div></div>
+			<div id="media">
+				<img
+					src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/facebook-icon-18-256.png"
+					width="40"
+					height="40"
+				/>
+				<img
+				src="https://tighestimepieces.com/wp-content/uploads/2016/11/Instagram-icon-WHITE.png"
+				width="40"
+				height="40"
+			/>
+			<img
+				src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/twitter-icon-18-256.png"
+				width="40"
+				height="40"
+			/>
+			</div>
+		</div>
 </body>
 </body>
 
